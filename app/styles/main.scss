@@ -10,6 +10,7 @@ $deep-green: #0e141b;
 // globals
 
 body {
+	background-color: #111;
 	text-align: center;
 	font-family: Arial;
 	background-repeat: no-repeat;
@@ -31,19 +32,12 @@ body section {
   padding: 60px 0;
 }
 
-body li a:hover {
-	text-decoration: none;
-}
-
-@media screen and (max-width: 768px) {
-
-  body h2 {
-  	font-size: 36px;
-  }
-  body p {
-  	font-size: 13px;
-  	width: 90%;
-  }
+body img {
+	margin: 2px;
+	@media screen and (max-width: 611px) {
+		margin: 20px auto;
+		width: 90%;
+	}
 }
 
 .browsehappy {
