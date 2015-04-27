@@ -13,7 +13,7 @@
         tagName: 'leftfieldlabs',
         resolution: 'low_resolution',
     	template: '<div class="image-container"><a href="{{link}}" target="_blank"><img src="{{image}}" />' +
-    	// <p class="image-caption">{{caption}}</p> +
+    	'<p class="image-caption">{{caption}}</p>' +
     	'</a></div>'
     });
     console.log('feed: ', feed);

@@ -7104,37 +7104,64 @@ body img {
   color: #dbdbdb;
   font-family: 'Roboto', arial, sans-serif;
   font-weight: 300;
+  opacity: 0;
   padding: 40px 0;
+  -webkit-animation: slideUp 2s ease-in-out;
+  /* Chrome, Safari, Opera */
+  animation: slideUp 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s !important;
+  /* Chrome, Safari, Opera */
+  animation-delay: 2s !important;
 }
 
 .image-container {
   display: inline-block;
   margin: 10px;
-  position: relative;
+  height: 310px;
+  width: 310px;
+  position: relative !important;
   vertical-align: top;
   text-align: left;
+  cursor: pointer;
 }
 
 .image-container a {
+  position: absolute;
   height: 100%;
   width: 100%;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .image-container img {
+  cursor: pointer;
+  opacity: 0.8;
   transition: all 250ms ease-in-out;
   -webkit-transition: all 250ms ease-in-out;
-}
-
-.image-container img:hover {
-  box-shadow: 0px 6px 6px 6px #232323;
 }
 
 .image-container .image-caption {
   font-size: 14px;
   max-width: 306px;
   color: #dbdbdb;
+  margin: 10px 0;
   font-family: 'Roboto', arial, sans-serif;
   font-weight: 400;
+  display: none;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+}
+
+.image-container a:hover {
+  /*	.image-caption {
+  		display: block;
+  	}*/
+}
+.image-container a:hover img {
+  box-shadow: 0px 6px 6px 6px #232323;
+  opacity: 1;
 }
 
 #instafeed {
@@ -7145,4 +7172,34 @@ body img {
   content: "";
   display: table;
   clear: both;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
 }
