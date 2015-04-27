@@ -52,3 +52,51 @@ body img {
 	background: $deep-green;
 	z-index: 9999;
 }
+
+.lfl-logo {
+	background-image: url(../images/lfl-logo.png);
+	height: 36px;
+	width: 46px;
+	background-repeat: no-repeat;
+	float: left;
+	margin: 10px 0 0 10px;
+}
+
+.instafeed-title h1 {
+	color: #dbdbdb;
+	font-family: 'Roboto', arial, sans-serif;
+	font-weight: 300;
+	padding: 40px 0;
+}
+
+.image-container {
+	display: inline-block;
+	margin: 5px;
+	position: relative;
+	vertical-align: top;
+	text-align: left;
+}
+
+.image-container a {
+	height: 100%;
+	width: 100%;
+}
+
+.image-container .image-caption {
+	font-size: 14px;
+	max-width: 306px;
+	color: #dbdbdb;
+	font-family: 'Roboto', arial, sans-serif;
+	font-weight: 400;
+}
+
+#instafeed {
+	margin: 0 auto;
+	max-width: 1200px;
+
+	&:after {
+		content: "";
+	    display: table;
+	    clear: both;
+	}
+}
