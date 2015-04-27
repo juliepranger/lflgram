@@ -16,7 +16,7 @@
     	'<p class="image-caption">{{caption}}</p>' +
     	'</a></div>'
     });
-    console.log('feed: ', feed);
+
     feed.run();
 
 })(jQuery);
