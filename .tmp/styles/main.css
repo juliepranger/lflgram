@@ -7109,7 +7109,7 @@ body img {
 
 .image-container {
   display: inline-block;
-  margin: 5px;
+  margin: 10px;
   position: relative;
   vertical-align: top;
   text-align: left;
@@ -7118,6 +7118,15 @@ body img {
 .image-container a {
   height: 100%;
   width: 100%;
+}
+
+.image-container img {
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+}
+
+.image-container img:hover {
+  box-shadow: 0px 6px 6px 6px #232323;
 }
 
 .image-container .image-caption {

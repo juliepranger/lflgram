@@ -12,8 +12,11 @@
         clientId: clientId_, // hide this var better
         tagName: 'leftfieldlabs',
         resolution: 'low_resolution',
-    	template: '<div class="image-container"><a href="{{link}}" target="_blank"><img src="{{image}}" /><p class="image-caption">{{caption}}</p></a></div>'
+    	template: '<div class="image-container"><a href="{{link}}" target="_blank"><img src="{{image}}" />' +
+    	// <p class="image-caption">{{caption}}</p> +
+    	'</a></div>'
     });
+    console.log('feed: ', feed);
     feed.run();
 
 })(jQuery);
