@@ -7057,7 +7057,7 @@ body h2 {
 
 body p {
   font-size: 20px;
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 600px;
 }
 
@@ -7149,6 +7149,7 @@ body img {
 
 .image-container img {
   cursor: pointer;
+  border: 3px solid black;
   opacity: 1;
   transition: all 250ms ease-in-out;
   -webkit-transition: all 250ms ease-in-out;
@@ -7170,6 +7171,7 @@ body img {
 }
 
 .image-container a:hover img {
+  border: 3px solid #5ea9dd;
   opacity: 0.4;
 }
 .image-container a:hover .image-caption {
@@ -7187,12 +7189,11 @@ body img {
 }
 
 #load-more {
+  cursor: pointer;
+  font-size: 16px;
   transition: all 250ms ease-in-out;
   -webkit-transition: all 250ms ease-in-out;
-  width: 50%;
-  border: 1px solid #dbdbdb;
-  background-color: black;
-  color: #dbdbdb;
+  color: #5ea9dd;
   padding: 10px 0;
   cursor: pointer;
   margin: 40px 0;
@@ -7200,12 +7201,14 @@ body img {
   position: relative;
 }
 
-#load-more:focus {
-  outline: none !important;
-}
-
 #load-more:hover {
   background-color: #1C1C1C;
+  text-decoration: none;
+}
+
+.load-more {
+  font-size: 1.2em;
+  margin-left: 7px;
 }
 
 @keyframes slideUp {
